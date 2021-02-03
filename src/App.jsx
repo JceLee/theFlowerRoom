@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import MainView from "./view/MainView";
 import Arrangements from "./view/Arrangements";
+import Footer from "./view/Footer";
 import "./App.scss";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
         <Route exact path="/" component={MainView} />
         <Route exact path="/arrangements" component={Arrangements} />
       </Router>
+      <Footer />
     </>
   );
 }
