@@ -8,7 +8,9 @@ import "./App.scss";
 export default function App() {
   return (
     <>
-      <h3 style={{ width: "70%", margin: "0 auto" }}>The Flower Room</h3>
+      <h3 className="title" style={{ maxWidth: "1024px", margin: "15px auto" }}>
+        The Flower Room
+      </h3>
       <Router>
         <Route exact path="/" component={MainView} />
         <Route exact path="/arrangements" component={Arrangements} />

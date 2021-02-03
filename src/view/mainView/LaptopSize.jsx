@@ -12,7 +12,10 @@ export default function LaptopSize() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
 
   return (
-    <div className="searchBarSectionDesktopImg" style={{ width: "100%", height: "450px" }}>
+    <div
+      className="searchBarSectionDesktopImg"
+      style={{ width: "100%", height: "450px", maxWidth: "1024px", margin: "0 auto" }}
+    >
       <AutoplaySlider
         play={true}
         cancelOnInteraction={false}
