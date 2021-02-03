@@ -1,13 +1,20 @@
-import React from "react";
-import SecondView from "./SecondView";
+import React, { useState } from "react";
+import MobileSize from "./mainView/MobileSize";
+import LaptopSize from "./mainView/LaptopSize";
 
 export default function MainView() {
+  const tabletLWidth = 768;
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  const reportWindowSize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  window.addEventListener("resize", reportWindowSize);
+
   return (
-    <>
-      <div style={{background : "yellow" , height : "500px", width : "70%", margin : "0 auto"}}>
-        MainView
-      </div>
-      <SecondView/>
-    </>
-  )
+    <div className="searchBarSection">
+      {screenWidth < tabletLWidth ? <MobileSize /> : <LaptopSize />}
+    </div>
+  );
 }
