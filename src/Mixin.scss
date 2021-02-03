@@ -60,6 +60,12 @@ $defaultPaddingWidth: calc((99% - 1300px)/2);
   }
 }
 
+@mixin tabletM {
+  @media only screen and (min-width: 942px) {
+    @content;
+  }
+}
+
 @mixin tabletL {
   @media only screen and (min-width: 1024px) {
     @content;
