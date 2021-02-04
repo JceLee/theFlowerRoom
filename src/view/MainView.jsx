@@ -4,6 +4,7 @@ import MobileSize from "./mainView/MobileSize";
 import LaptopSize from "./mainView/LaptopSize";
 import menu1 from "../assets/products/1.jpeg";
 import menu2 from "../assets/products/2.jpeg";
+import letter from "../assets/letter.jpeg";
 
 const menu = [
   {
@@ -48,6 +49,9 @@ export default function MainView() {
         <div className="contents">
           <ul>{menu.map((menu, index) => imageCard(menu, index))}</ul>
         </div>
+      </section>
+      <section style={{ maxWidth: "1024px", margin: "0 auto" }}>
+        <Image src={letter} />
       </section>
     </>
   );
