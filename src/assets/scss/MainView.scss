@@ -436,18 +436,51 @@
           margin: 20px;
           padding:0;
           border: 1px solid transparent;
-          width: 70%;
-          
+          width: 80vw;
+          height: 80vw;
+          max-width: 400px;
+          max-height: 400px;
           position: relative;
           display: inline-grid;
 
           @include tabletP {
-            width: 43%;
+            width: 400px;
+            height: 400px;
           }
 
           @include tabletM {
-            width: 45%;
-            margin: 20px;
+            width: 400px;
+            height: 400px;
+          }
+
+          .container {
+            background-image: url("../products/1.jpeg");
+            position: relative;
+
+            @include tabletP {
+              width: 400px;
+              height: 400px;
+            }
+  
+            @include tabletM {
+              width: 400px;
+              height: 400px;
+            }
+
+            .innerContent {
+              position: relative;
+              top: 50%;
+              left: 50%;
+              width: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+              font-size: 3em;
+              font-weight: 100;
+              font-family: 'Raleway', sans-serif;
+              color: white;
+              box-sizing: border-box;
+              border: 14px solid transparent;
+            }
           }
           
 
@@ -457,18 +490,6 @@
 
           .innerContent {
               background-color: #e8e8e8;
-              .title {
-                  font-weight: 800;
-                  font-size: 1.4em;
-                  color: black;
-                  font-style: italic;
-                  margin:0;
-              }
-  
-              .subtitle {
-                  color: black;
-                  font-size: 0.8em;
-              }
 
               .worksList {
                   
@@ -495,12 +516,182 @@
                   }
               }
           }
-
-
       }
 
+      h5 {
+          margin-top: 10vh;
+          margin-bottom: 15px;
+          display: block;
+          font-size: 14px;
+          text-transform: uppercase;
+          color: #999999;
+          font-weight: 500;
+          letter-spacing: 5px;
+      }
 
+      h4 {
+          
+          color: #000;
+          font-size: 18px;
+          font-weight: 700;
+          letter-spacing: 5px;
+          line-height: 1.8;
+          font-family: "Playfair Display", Georgia, serif;
+      }
 
+      p {
+          margin: 7vh 0;
+          font-family: "Quicksand", Arial, sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.8;
+          color: rgba(0, 0, 0, 0.7);
+      }
+
+  }
+}
+
+.imgCard {
+
+  margin: 0 auto;
+
+  h3 {
+    text-align: center;
+  }
+
+  .imgWrapper {
+    margin: 0 auto;
+    text-align: center;
+
+    .ant-image {
+      width: 80vw;
+      max-width: 400px;
+      margin: 0 auto;
+      
+      @include mobileMtoL {
+        width: 840px;
+        max-width: 1024px;
+      }
+  
+      .ant-image-img {
+        padding:0;
+        border: 1px solid transparent;
+        margin: 0 auto;
+        align-items: center;
+      }
+  
+    }
+
+  }
+}
+
+.textCard {
+
+  .contents {
+      width: 100%;
+      margin: auto;
+
+      ul {
+          text-align: center;
+          padding-inline-start: 0;
+      }
+
+      .imageCard {
+          margin: 20px;
+          padding:0;
+          border: 1px solid transparent;
+          width: 80vw;
+          height: 80vw;
+          max-width: 400px;
+          max-height: 400px;
+          position: relative;
+          display: inline-grid;
+
+          @include tabletP {
+            width: 400px;
+            height: 400px;
+          }
+
+          @include tabletM {
+            width: 400px;
+            height: 400px;
+          }
+
+          .container {
+            background: transparent;
+            position: relative;
+
+            @include tabletP {
+              width: 400px;
+              height: 400px;
+            }
+  
+            @include tabletM {
+              width: 400px;
+              height: 400px;
+            }
+
+            .innerContent {
+              position: relative;
+              top: 50%;
+              left: 50%;
+              height: 100%;
+              width: 100%;
+              background: white;
+              transform: translate(-50%, -50%);
+              text-align: center;
+              font-size: 14px;
+              font-weight: 100;
+              font-family: 'Raleway', sans-serif;
+              box-sizing: border-box;
+              border: 14px solid transparent;
+
+              .subTitle {
+                margin-top: 25px;
+              }
+
+              .message {
+                color: black;
+                font-size: 16px;
+                margin-top: 35px;
+              }
+            }
+          }
+          
+
+          .imgWrapper {
+              width: 100%;
+          }
+
+          .innerContent {
+              background-color: #e8e8e8;
+
+              .worksList {
+                  
+                  .work {
+                      display: inline-block;
+                      padding: 8px 5px;
+                      background-color: #313131;
+                      color:#999;
+                      border-width: 1px 1px 2px 1px;
+                      border-style: #222;
+                      border-radius: 3px;
+                      text-transform: uppercase;
+                      font-family: MontSerrat,Tahoma,Arial,sans-serif;
+                      font-weight:700;
+                      font-size: .75em;
+                      line-height: 1em;
+                      box-shadow: 1px 1px  rgba(0,0,0,.25);
+                      margin: 3px;
+                      opacity: 1;
+                      cursor: pointer;
+                      position: relative;
+                      overflow: hidden;
+                      
+                  }
+              }
+          }
+      }
 
       h5 {
           margin-top: 10vh;
