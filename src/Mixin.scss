@@ -37,7 +37,7 @@ $defaultPaddingWidth: calc((99% - 1300px)/2);
 }
 
 @mixin mobileMtoL {
-  @media only screen and (min-width: 425px) {
+  @media only screen and (min-width: 880px) {
     @content;
   }
 }
