@@ -8,7 +8,23 @@
 @import './assets/scss/Footer.scss';
 
 .title {
-    font-size: 28px;
-    font-weight: 800;
-    color: $bookito;
+    .theFlowerRoom {
+        color: $bookito;
+        font-size: 28px;
+        font-weight: 800;
+        padding-left: 20px;
+    }
+    .subTitle {
+        
+        font-weight: 400;
+        text-align: right;
+        vertical-align: bottom;
+        padding-right: 20px;
+        .content {
+            margin: 0;
+            padding-top: 12px;
+            vertical-align: bottom;
+            font-size: 16px;
+        }
+    }
 }

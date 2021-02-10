@@ -22,6 +22,7 @@
 // search bar section
 .searchBarSection {
   width: 100%;
+  max-width: 840px;
   height: 450px;
   margin-bottom: 5%;
 
@@ -425,7 +426,7 @@
 
   .contents {
       width: 100%;
-      margin: auto;
+      margin-bottom: 50px;
 
       ul {
           text-align: center;
@@ -474,12 +475,19 @@
               width: 50%;
               transform: translate(-50%, -50%);
               text-align: center;
-              font-size: 3em;
-              font-weight: 100;
-              font-family: 'Raleway', sans-serif;
-              color: white;
               box-sizing: border-box;
+              background-color: transparent;
               border: 14px solid transparent;
+              
+
+              .title {
+                opacity: 1;
+                color: black;
+                font-size: 30px;
+                font-weight: 800;
+                font-family: 'Raleway', sans-serif;
+                letter-spacing: 5px;
+              }
             }
           }
           
@@ -553,14 +561,13 @@
 
 .imgCard {
 
-  margin: 0 auto;
-
   h3 {
     text-align: center;
   }
 
   .imgWrapper {
     margin: 0 auto;
+    margin-bottom: 50px;
     text-align: center;
 
     .ant-image {
@@ -603,18 +610,18 @@
           width: 80vw;
           height: 80vw;
           max-width: 400px;
-          max-height: 400px;
+          max-height: 300px;
           position: relative;
           display: inline-grid;
 
           @include tabletP {
             width: 400px;
-            height: 400px;
+            height: 300px;
           }
 
           @include tabletM {
             width: 400px;
-            height: 400px;
+            height: 300px;
           }
 
           .container {
@@ -623,12 +630,12 @@
 
             @include tabletP {
               width: 400px;
-              height: 400px;
+              height: 300px;
             }
   
             @include tabletM {
               width: 400px;
-              height: 400px;
+              height: 300px;
             }
 
             .innerContent {
@@ -647,13 +654,17 @@
               border: 14px solid transparent;
 
               .subTitle {
-                margin-top: 25px;
+                margin-bottom: 50px;
               }
 
               .message {
                 color: black;
                 font-size: 16px;
                 margin-top: 35px;
+              }
+
+              .icon {
+                margin: 15px 0;
               }
             }
           }

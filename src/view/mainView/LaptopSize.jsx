@@ -14,7 +14,7 @@ export default function LaptopSize() {
   return (
     <div
       className="searchBarSectionDesktopImg"
-      style={{ width: "100%", height: "450px", maxWidth: "1024px", margin: "0 auto" }}
+      style={{ width: "100%", height: "450px", maxWidth: "840px", margin: "0 auto" }}
     >
       <AutoplaySlider
         play={true}

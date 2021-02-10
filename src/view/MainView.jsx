@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Image } from "antd";
 import MobileSize from "./mainView/MobileSize";
 import LaptopSize from "./mainView/LaptopSize";
-import menu1 from "../assets/products/1.jpeg";
-import menu2 from "../assets/products/2.jpeg";
+import menu1 from "../assets/background/menu01.jpg";
+import menu2 from "../assets/background/menu02.jpg";
 import letter from "../assets/letter.jpeg";
 import { InstagramOutlined, MailOutlined } from "@ant-design/icons";
 
@@ -38,7 +38,7 @@ export default function MainView() {
   const imageCard = (menu, index) => {
     return (
       <li className="imageCard" key={index}>
-        <div class="container">
+        <div class="container" style={{ backgroundImage: `url(${menu.url})`, opacity: "0.7" }}>
           <div className="innerContent">
             <p className="title">{menu.title}</p>
           </div>
@@ -78,10 +78,10 @@ export default function MainView() {
               <div class="container">
                 <div className="innerContent">
                   <h4 className="subTitle">CONTACT US</h4>
-                  <p>
+                  <p className="icon">
                     <InstagramOutlined /> theflower_room_yyc
                   </p>
-                  <p>
+                  <p className="icon">
                     <MailOutlined /> flowerroomyyc@gmail.com
                   </p>
                 </div>
