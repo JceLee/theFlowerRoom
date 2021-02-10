@@ -1,5 +1,54 @@
 @import "../../Mixin.scss";
 
+
+.title {
+
+  .backTopButton {
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: $bookito;
+    color: $white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    right: -8px;
+    bottom: 24px;
+  }
+  .theFlowerRoom {
+      color: #1890ff;
+      font-size: 28px;
+      font-weight: 800;
+      padding-left: 20px;
+
+      flex: 0 0 100%;
+      max-width : 100%;
+
+      @include tabletS {
+        flex: 0 0 50%;
+        max-width : 50%;
+      }
+  }
+  .subTitle {
+    display: none;  
+
+      @include tabletS {
+        display: inline;  
+        font-weight: 400;
+        text-align: right;
+        vertical-align: bottom;
+        padding-right: 20px;
+        .content {
+          margin: 0;
+          padding-top: 12px;
+          vertical-align: bottom;
+          font-size: 16px;
+      }
+      }
+
+
+  }
+}
+
 .searchBarSectionDesktopImg {
   display: none;
   z-index: 0;
@@ -24,7 +73,7 @@
   width: 100%;
   max-width: 840px;
   height: 450px;
-  margin-bottom: 5%;
+  margin-bottom: 50px;
 
   .searchBarSectionImg {
     object-fit: cover;
@@ -223,7 +272,7 @@
 
 // info card section
 .infoCardsSection {
-  margin: 10%;
+  margin: 50px 0;
   @include tabletP {
     display: flex;
     justify-content: center;
@@ -250,7 +299,7 @@
 // new designer desktop section
 .newDesignersSection {
   padding: 20px 5%;
-  margin: 5vh 0;
+  margin: 50px 0;
   background-color: #fafafa;
 
   @include tabletP {
@@ -276,7 +325,7 @@
 
   .headerSection {
     text-align: center;
-    margin-bottom: 5vh;
+    margin: 50px 0;
 
     @include tabletL {
       text-align: left;
@@ -341,6 +390,7 @@
   .newDesignersHeaderSmallDesktopSection {
     font-size: 30pt;
     font-weight: 500;
+    margin: 50px 0;
     @include mainPageNewDesigners1090 {
       display: none;
     }
@@ -348,6 +398,7 @@
 
   .imagesSection {
     width: 100%;
+    margin: 50px 0;
     @include tabletL {
       width: 60%;
     }
@@ -424,9 +475,10 @@
 
 .menu {
 
+  margin: 50px 0;
+
   .contents {
       width: 100%;
-      margin-bottom: 50px;
 
       ul {
           text-align: center;
@@ -604,25 +656,17 @@
       }
 
       .imageCard {
-          margin: 20px;
           padding:0;
           border: 1px solid transparent;
-          width: 80vw;
-          height: 80vw;
           max-width: 400px;
-          max-height: 300px;
+          max-height: 600px;
           position: relative;
           display: inline-grid;
 
           @include tabletP {
             width: 400px;
-            height: 300px;
           }
 
-          @include tabletM {
-            width: 400px;
-            height: 300px;
-          }
 
           .container {
             background: transparent;
@@ -630,13 +674,8 @@
 
             @include tabletP {
               width: 400px;
-              height: 300px;
             }
   
-            @include tabletM {
-              width: 400px;
-              height: 300px;
-            }
 
             .innerContent {
               position: relative;
@@ -647,25 +686,52 @@
               background: white;
               transform: translate(-50%, -50%);
               text-align: center;
-              font-size: 14px;
-              font-weight: 100;
-              font-family: 'Raleway', sans-serif;
               box-sizing: border-box;
               border: 14px solid transparent;
 
               .subTitle {
+
+                margin-top: 50px;
                 margin-bottom: 50px;
+                font-size: 30px;
+                font-family: 'Raleway', sans-serif;
               }
 
               .message {
                 color: black;
+                font-family: 'Raleway', sans-serif;
                 font-size: 16px;
                 margin-top: 35px;
+                padding: 0 25px;
+                font-weight: 400;
+                white-space: pre-wrap;
+
+                .mobilePixel {
+                  font-size : 20px;
+                }
+              }
+              
+              .icons {
+
+                @include tabletP {
+                  margin-top: 78px;
+                }
+                
+                .icon {
+                  margin: 15px 0;
+                  color: black;
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 20px;
+                  padding: 0 25px;
+                  font-weight: 400;
+                  white-space: pre-wrap;
+
+                  .mobilePixel {
+                    font-size : 24px;
+                  }
+                }
               }
 
-              .icon {
-                margin: 15px 0;
-              }
             }
           }
           
