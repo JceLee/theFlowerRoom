@@ -25,7 +25,7 @@ $defaultPaddingWidth: calc((99% - 1300px)/2);
 }
 
 @mixin mobilePixel {
-  @media only screen and (min-width: 411px) {
+  @media only screen and (min-width: 400px) {
     @content;
   }
 }
@@ -50,6 +50,12 @@ $defaultPaddingWidth: calc((99% - 1300px)/2);
 
 @mixin mobileLtoTabletP {
   @media only screen and (min-width: 540px) {
+    @content;
+  }
+}
+
+@mixin tabletS {
+  @media only screen and (min-width: 710px) {
     @content;
   }
 }
